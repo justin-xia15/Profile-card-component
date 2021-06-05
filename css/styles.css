@@ -3,6 +3,7 @@ body {
   background-color: hsl(185, 75%, 39%);
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
 span {
@@ -14,14 +15,14 @@ span {
 }
 
 hr {
-  position: relative;
+  border: dotted #dfeeea 1px;
 }
 
 .image {
   border-radius: 50%;
   position: absolute;
-  top: 60px;
-  left: 95px;
+  top: 80px;
+  left: 115px;
   height: 120px;
   width: 120px;
   }
@@ -29,9 +30,10 @@ hr {
 .card {
   background-color: white;
   border-radius: 15px;
+  display: inline-block;
   height: 400px;
   position: fixed;
-  width: 310px;
+  width: 350px;
   left: 0;
   right: 0;
   top: 0;
@@ -40,7 +42,7 @@ hr {
 }
 
 .card-pattern {
-  width: 310px;
+  width: 350px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -51,15 +53,38 @@ hr {
   height: 100px;
   width: 200px;
   position: absolute;
-  margin-top: 60px;
+  margin-top: 70px;
   margin-left: 70px;
+  line-height: 1.5;
+}
+
+.division {
+  position: relative;
+  margin-top: 45%;
 }
 
 .name {
-  color: black;
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+  width: 150px;
+}
+
+.age {
   font-family: 'Kumbh Sans';
   font-size: 18px;
-  font-weight: 700;
+  color: gray;
+}
+.location {
+  font-size: 14px;
+  font-family: 'Kumbh Sans';
+  font-weight: 400;
+  color: gray;
+  line-height: 2;
+  position: relative;
+  margin-left: 5px;
 }
 
 .attribution {
@@ -68,7 +93,7 @@ hr {
 }
 
 .followers {
-  bottom: 20px;
+  bottom: 10px;
   font-family: 'Kumbh Sans';
   font-size: 18px;
   font-weight: 700;
@@ -80,12 +105,12 @@ hr {
 }
 
 .likes {
-  bottom: 20px;
+  bottom: 10px;
   font-family: 'Kumbh Sans';
   font-size: 18px;
   font-weight: 700;
   height: 50px;
-  left: 130px;
+  left: 150px;
   position: absolute;
   width: 50px;
 }
@@ -95,23 +120,20 @@ hr {
   font-size: 18px;
   font-weight: 700;
   height: 50px;
-  left: 220px;
-  bottom: 20px;
+  right: 40px;
+  bottom: 10px;
   position: absolute;
   width: 50px;
 }
 
 .bottom-pattern {
-  position: absolute;
-  height: 700px;
-  bottom: 0;
-  left: 1200px;
+  position: relative;
+  margin-left: 720px;
+  margin-top: 400px;
 }
 
 .top-pattern {
   position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 200px;
-  width: 650px;
+  right: 825px;
+  bottom: 1580px;
 }
